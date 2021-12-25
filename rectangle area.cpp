@@ -2,28 +2,23 @@
 
 using namespace std;
 
-class Rectangle
-{
-  public:
-      int w, h, result = 0;
-      void read_input()
-      {
-          cin >> w >> h;
-      }
-      void display()
-      {
-          cout << w << " " << h << endl;
-      }
+class Rectangle {
+    public:
+        int w, h, result = 0;
+        void display() {
+            cout << w << " " << h << endl;
+        }
 };
 
-class RectangleArea : public Rectangle
-{
-  public:
-      void display()
-      {
-          result = w * h;
-          cout << result;
-      }
+class RectangleArea : public Rectangle {
+    public:
+        void read_input() {
+            cin >> w >> h;
+        }
+        void display() {
+            result = w * h;
+            cout << result;
+        }
 };
 
 
